@@ -22,7 +22,7 @@
 <p align="center">
 <h3 align="center">Trophies</h3>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=khasmir04&theme=onedark&title=Joined2020,Commit,Stars,Followers,Repositories)]
+![trophy](https://github-profile-trophy.vercel.app/?username=khasmir04&theme=onedark&title=Joined2020,Commit,Stars,Followers,Repositories)
 
 </p>
 
