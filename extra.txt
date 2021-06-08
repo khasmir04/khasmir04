@@ -1,0 +1,116 @@
+<details>
+  <summary>Project Details</summary>
+    <br/>
+    ## Table of Contents
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+  <!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://khasmir.cusina.codes/)
+
+### Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+- [Flickity](https://flickity.metafizzy.co/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [Mapbox](https://www.mapbox.com/)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+Download the whole project and setup a server to run.
+You can just use a live server extension in VS Code
+
+### Prerequisites
+
+Use updated browsers when visiting the site:
+
+- Chrome
+- Mozilla
+- Opera
+- Edge
+- Safari
+
+### Installation
+
+You can browse the website using the following link:
+https://khasmir04.github.io/
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+This website can be used for most landing pages with the same design.
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://khasmir04.github.io/) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Khasmir Jhon Caluscusao - [@khasmircortez](https://twitter.com/khasmircortez) - kcaluscusao@gmail.com
+
+Project Link: [https://github.com/khasmir04/Cusina](https://github.com/khasmir04/Cusina)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [Flickity](https://flickity.metafizzy.co/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [Mapbox](https://www.mapbox.com/)
+- [Font Awesome](https://fontawesome.com)
+- [Pexels](https://www.pexels.com/)
+- [icons8](https://icons8.com/)
+- [Unsplash](https://unsplash.com)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+</details>
