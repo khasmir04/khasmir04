@@ -10,7 +10,7 @@
 <br />
 
 <p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/khasmir04/khasmir04/main/images/banner.jpg">
+  <img width="100%" src="https://raw.githubusercontent.com/khasmir04/khasmir04/main/assets/img/banner.png">
 </p>
 
 <h1 align="center"><img height="24" src="https://thumbs.gfycat.com/FoolhardyLongIrishdraughthorse-max-1mb.gif"> Oh, hi there! , I'm Khasmir</h1>
