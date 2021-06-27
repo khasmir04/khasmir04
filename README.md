@@ -36,6 +36,8 @@
 </p>
 
 <br />
+<br />
+
 <p align="center">
 <h3 align="center">Trophies</h3>
 
