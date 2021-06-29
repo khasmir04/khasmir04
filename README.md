@@ -96,6 +96,7 @@
 </a>
 
 <br/>
+<br/>
 
 <h2>My Top Projects ✨:</h2>
   <br/>
@@ -104,12 +105,20 @@
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=Cusina&theme=tokyonight" />
 </a>
 
+<a href="https://github.com/khasmir04/eduka">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=eduka&theme=tokyonight" />
+</a>
+
 <a href="https://github.com/khasmir04/Valorant-Memory-Game">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=Valorant-Memory-Game&theme=tokyonight" />
 </a>
 
 <a href="https://github.com/khasmir04/Bootstrap-Chat-Conversation">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=Bootstrap-Chat-Conversation&theme=tokyonight" />
+</a>
+
+<a href="https://github.com/khasmir04/socket-io-demo">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=socket-io-demo&theme=tokyonight" />
 </a>
   
 <a href="https://github.com/khasmir04/Login-Page">
