@@ -62,8 +62,8 @@
 <code><img height="48" src="/assets/img/tools/nextjs.png"></code>
 <code><img height="48" src="/assets/img/tools/mysql.png"></code>
 <code><img height="48" src="/assets/img/tools/tailwind.png"></code>
-<code><img height="48" src="/assets/img/tools/laravel.png"></code>
-<code><img height="48" src="/assets/img/tools/php.png"></code>
+<!-- <code><img height="48" src="/assets/img/tools/laravel.png"></code>
+<code><img height="48" src="/assets/img/tools/php.png"></code> -->
 <code><img height="48" src="/assets/img/tools/aws.jpg"></code>
 <code><img height="48" src="/assets/img/tools/sass.png"></code>
 <code><img height="48" src="/assets/img/tools/figma.png"></code>
