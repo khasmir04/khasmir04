@@ -113,6 +113,10 @@
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=Valorant-Memory-Game&theme=tokyonight" />
 </a>
 
+<a href="https://github.com/khasmir04/shopporo">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=shopporo&theme=tokyonight" />
+</a>
+
 <a href="https://github.com/khasmir04/Bootstrap-Chat-Conversation">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=Bootstrap-Chat-Conversation&theme=tokyonight" />
 </a>
@@ -120,10 +124,7 @@
 <a href="https://github.com/khasmir04/socket-io-demo">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=socket-io-demo&theme=tokyonight" />
 </a>
-  
-<a href="https://github.com/khasmir04/Login-Page">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=Login-Page&theme=tokyonight" />
-</a>
+
 
 [contributors-shield]: https://img.shields.io/github/contributors/khasmir04/khasmir04.github.io.svg?style=for-the-badge
 [contributors-url]: https://github.com/khasmir04/khasmir04.github.io/graphs/contributors
