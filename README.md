@@ -14,7 +14,7 @@
 </p>
 
 <h1 align="center"><img height="24" src="https://thumbs.gfycat.com/FoolhardyLongIrishdraughthorse-max-1mb.gif"> Oh, hi there! , I'm Khasmir</h1>
-<h3 align="center">I'm a Web Developer.</h3>
+<h3 align="center">I'm a Game and Web Developer.</h3>
 
 <h2>About me 🧛:</h2>
 
