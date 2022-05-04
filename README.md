@@ -51,6 +51,7 @@
   <br/>
 <code><img height="48" src="/assets/img/tools/html.png"></code>
 <code><img height="48" src="/assets/img/tools/css.png"></code>
+<code><img height="48" src="/assets/img/tools/typescript.png"></code>
 <code><img height="48" src="/assets/img/tools/javascript.png"></code>
 <code><img height="48" src="/assets/img/tools/nodejs.png"></code>
 <code><img height="48" src="/assets/img/tools/git.png"></code>
