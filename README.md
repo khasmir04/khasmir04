@@ -1,3 +1,4 @@
+![](https://komarev.com/ghpvc/?khasmir04)
 # Dev KJ - Gamer :video_game: and Developer :computer:
 
 [![Contributors][contributors-shield]][contributors-url]
