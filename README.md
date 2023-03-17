@@ -30,12 +30,9 @@
 - 🎮 Fun fact **I'm a GAMER**
 
 
-<a href="https://github.com/khasmir04">
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khasmir04&theme=tokyonight&layout=compact" />
-</a>
-
 <p align="center">
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=khasmir04&show_icons=true&theme=tokyonight&line_height=27&count_private=true" alt="Khasmir's github stats"/>
+    <img align="center" src="https://github-readme-stats.vercel.app/api?username=khasmir04&show_icons=true&theme=tokyonight&count_private=true" alt="Khasmir's github stats"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khasmir04&theme=tokyonight&layout=compact" />
 </p>
 
 <br />
