@@ -1,5 +1,6 @@
-![Profile views](https://gpvc.arturio.dev/khasmir04)
-# Dev KJ - Gamer :video_game: and Developer :computer:
+<!-- ![Profile views](https://gpvc.arturio.dev/khasmir04) -->
+
+# Dev KJ - Gamer :video_game: and Developer :computer: 
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -8,7 +9,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<br />
+&nbsp;
 
 <p align="center">
   <img width="100%" src="https://raw.githubusercontent.com/khasmir04/khasmir04/main/assets/img/banner.png">
@@ -25,18 +26,17 @@
 
 - 👨‍💻 See my projects **<a href="https://github.com/khasmir04?tab=repositories">here</a>**
 
-- 📫 Contact me at **kcaluscusao@gmail.com**
+- 📫 Contact me at **<kcaluscusao@gmail.com>**
 
 - 🎮 Fun fact **I'm a GAMER**
-
 
 <p align="center">
     <img align="center" src="https://github-readme-stats.vercel.app/api?username=khasmir04&show_icons=true&theme=tokyonight&count_private=true" alt="Khasmir's github stats"/>
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khasmir04&theme=tokyonight&layout=compact" />
 </p>
 
-<br />
-<br />
+&nbsp;
+&nbsp;
 
 <p align="center">
 <h3 align="center">Trophies</h3>
@@ -45,10 +45,12 @@
     <img align="center" src="https://github-profile-trophy.vercel.app/?username=khasmir04&theme=onedark&title=Joined2020,Commit,Stars,Followers,Repositories,Issues" alt="Khasmir's github stats"/>
 </p>
 
-<br />
+&nbsp;
 
 <h2>Languages and Tools🛠:</h2>
-  <br/>
+
+&nbsp;
+
 <code><img height="48" src="/assets/img/tools/html.png"></code>
 <code><img height="48" src="/assets/img/tools/css.png"></code>
 <code><img height="48" src="/assets/img/tools/typescript.png"></code>
@@ -70,7 +72,7 @@
 <code><img height="48" src="/assets/img/tools/figma.png"></code>
 <code><img height="48" src="/assets/img/tools/react.png"></code>
 
-<br />
+&nbsp;
 
 <h2>Connect with me🤝:</h2>
 
@@ -126,7 +128,6 @@
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=khasmir04&repo=socket-io-demo&theme=tokyonight" />
 </a>
 
-
 [contributors-shield]: https://img.shields.io/github/contributors/khasmir04/khasmir04.github.io.svg?style=for-the-badge
 [contributors-url]: https://github.com/khasmir04/khasmir04.github.io/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/khasmir04/khasmir04.github.io.svg?style=for-the-badge
@@ -139,4 +140,4 @@
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/khasmir/
-[product-screenshot]: /assets/img/Screenshot.png
+<!-- [product-screenshot]: /assets/img/Screenshot.png -->
