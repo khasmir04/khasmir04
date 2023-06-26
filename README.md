@@ -1,6 +1,9 @@
 <!-- ![Profile views](https://gpvc.arturio.dev/khasmir04) -->
 
-# Dev KJ - Gamer :video_game: and Developer :computer: 
+
+# Dev KJ - Gamer :video_game: and Developer :computer:
+
+[![Profile Views](https://visitcount.itsvg.in/api?id=khasmir04&label=Visitors&color=1&icon=6&pretty=true)](https://visitcount.itsvg.in)
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
