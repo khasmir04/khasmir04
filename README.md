@@ -26,6 +26,8 @@
 
 - 👯 I’m open to collaborations on **OpenSource Projects**
 
+- 🤵 Visit my portfolio **<a href="https://react-vite-portfolio-one.vercel.app">here</a>**
+
 - 👨‍💻 See my projects **<a href="https://github.com/khasmir04?tab=repositories">here</a>**
 
 - 📫 Contact me at **<kcaluscusao@gmail.com>**
