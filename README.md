@@ -22,7 +22,7 @@
 
 <h2>About me 🧛:</h2>
 
-- 🌱 I’m currently learning **Full Stack Web Development**
+- 👨‍💼 I’m currently working as a **React JS Developer**
 
 - 👯 I’m open to collaborations on **OpenSource Projects**
 
@@ -33,6 +33,8 @@
 - 📫 Contact me at **<kcaluscusao@gmail.com>**
 
 - 🎮 Fun fact **I'm a GAMER**
+
+&nbsp;
 
 <p align="center">
     <img align="center" src="https://github-readme-stats.vercel.app/api?username=khasmir04&show_icons=true&theme=tokyonight&count_private=true" alt="Khasmir's github stats"/>
