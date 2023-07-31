@@ -1,0 +1,25 @@
+name: GitHub Contribution 3D Stats
+
+on:
+  schedule:
+    - cron: '0 18 * * 1-5'
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v3
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: khasmir04
+      - name: Commit & Push
+        run: |
+          git config user.name khasmir04
+          git config user.email kcaluscusao@gmail.com
+          git add -A .
+          git commit -m "doc: update github-profile-3d-contrib"
+          git push
