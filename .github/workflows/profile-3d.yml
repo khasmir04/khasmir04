@@ -2,8 +2,7 @@ name: GitHub Contribution 3D Stats
 
 on:
   schedule:
-    # - cron: '0 18 * * 1-5'
-    - cron: '*/5 * * * *'
+    - cron: '0 6,18 * * 1-5' # Run at 6:00 AM and 6:00 PM on weekdays (Monday to Friday)
   workflow_dispatch:
 
 jobs:
@@ -21,5 +20,5 @@ jobs:
           git config user.name khasmir04
           git config user.email kcaluscusao@gmail.com
           git add -A .
-          git commit -m "doc: update github-profile-3d-contrib"
+          git commit -m "docs: update github-profile-3d-contrib"
           git push
