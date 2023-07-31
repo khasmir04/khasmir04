@@ -138,7 +138,7 @@
 
 <br/>
 
-![Alt Contributions](/profile-3d-contrib/profile-night-green.svg)
+![3D Contributions](/profile-3d-contrib/profile-night-green.svg)
 
 [contributors-shield]: https://img.shields.io/github/contributors/khasmir04/khasmir04.github.io.svg?style=for-the-badge
 [contributors-url]: https://github.com/khasmir04/khasmir04.github.io/graphs/contributors
