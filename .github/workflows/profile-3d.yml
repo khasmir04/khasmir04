@@ -2,7 +2,7 @@ name: GitHub Contribution 3D Stats
 
 on:
   schedule:
-    - cron: '0 */6 * * 1-5' # Run at 6:00 AM and 6:00 PM on weekdays (Monday to Friday)
+    - cron: '0 */5 * * 1-5' # Run every 5 hours on weekdays (Monday to Friday)
   workflow_dispatch:
 
 jobs:
