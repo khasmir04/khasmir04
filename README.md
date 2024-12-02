@@ -86,23 +86,23 @@
 <br/>
 
 <a href="https://github.com/khasmir04">
-  <img align="left" alt="Dave's Github" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png" />
+  <img align="left" alt="Github" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png" />
 </a>
 
 <a href="https://instagram.com/khasmir.cortez/">
-  <img align="left" alt="Dave's Instagram" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" />
+  <img align="left" alt="Instagram" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" />
 </a>
 
 <a href="https://www.facebook.com/khazmhir/">
-  <img align="left" alt="Dave's Facebook" width="48px" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" />
+  <img align="left" alt="Facebook" width="48px" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" />
 </a>
 
 <a href="https://twitter.com/khasmircortez">
-  <img align="left" alt="Dave's Twitter" width="48px" src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png" />
+  <img align="left" alt="Twitter" width="48px" src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Twitter_NEW.png" />
 </a>
 
 <a href="https://www.linkedin.com/in/khasmir/">
-  <img align="left" alt="Dave's Linkdein" width="48px" src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" />
+  <img align="left" alt="Linkdein" width="48px" src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" />
 </a>
 
 <br/>
