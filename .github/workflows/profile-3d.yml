@@ -2,7 +2,8 @@ name: GitHub Contribution 3D Stats
 
 on:
   schedule:
-    - cron: '0 */5 * * 1-5' # Run every 5 hours on weekdays (Monday to Friday)
+    #- cron: '0 */5 * * 1-5' # Run every 5 hours on weekdays (Monday to Friday)
+    - cron: '0 */5 * * 1,4,6' # MTHS
   workflow_dispatch:
 
 jobs:
