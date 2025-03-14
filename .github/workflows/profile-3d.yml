@@ -4,7 +4,8 @@ on:
   schedule:
     #- cron: '0 */5 * * 1-5' # Run every 5 hours on weekdays (Monday to Friday)
     # - cron: '0 */5 * * 1,4,6' # MTHS
-    - cron: '0 */5 * * 2,4,5' # TTHF
+    # - cron: '0 */5 * * 2,4,5' # TTHF
+    - cron: '0 */5 * * 1,2,5' # MTF
   workflow_dispatch:
 
 jobs:
