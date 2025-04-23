@@ -23,7 +23,7 @@
 
 <h2>About me 🧛:</h2>
 
-- 👨‍💼 I’m currently working as a **React JS Developer**
+- 👨‍💼 I’m currently working as a **Full Stack Developer**
 
 - 👯 I’m open to collaborations on **OpenSource Projects**
 
