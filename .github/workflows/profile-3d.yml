@@ -18,7 +18,8 @@ on:
     # - cron: '0 */5 * * 1,6' # MS
     # - cron: '0 */5 * * 0,5' # SF
     # - cron: '0 */5 * * 6' # S
-    - cron: '0 */5 * * 1,5' # MF
+    # - cron: '0 */5 * * 1,5' # MF
+    - cron: '0 */5 * * 0,4,5' # STF
   workflow_dispatch:
 
 jobs:
