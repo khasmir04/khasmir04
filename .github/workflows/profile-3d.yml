@@ -2,48 +2,149 @@ name: GitHub Contribution 3D Stats
 
 on:
   schedule:
-    #- cron: '0 */5 * * 1-5' # Run every 5 hours on weekdays (Monday to Friday)
-    # - cron: '0 */5 * * 1,4,6' # MTHS
-    # - cron: '0 */5 * * 2,4,5' # TTHF
-    # - cron: '0 */5 * * 1,2,5' # MTF
-    # - cron: '0 */5 * * 0,2,3,6' #TWSS
-    # - cron: '0 */5 * * 1,3,4,5' # MWTHF
-    # - cron: '0 */5 * * 2,6' # TS
-    # - cron: '0 */5 * * 1,3,4' # MWTH
-    # - cron: '0 */5 * * 0,2,5' # FST
-    # - cron: '0 */5 * * 1,4,5' # MTHF
-    # - cron: '0 */5 * * 3,6' # WS
-    # - cron: '0 */5 * * 0,1,3,6' # SMWS
-    # - cron: '0 */5 * * 2,4' # TTH
-    # - cron: '0 */5 * * 1,6' # MS
-    # - cron: '0 */5 * * 0,5' # SF
-    # - cron: '0 */5 * * 6' # S
-    # - cron: '0 */5 * * 1,5' # MF
-    # - cron: '0 */5 * * 0,4,5' # STF
-    # - cron: '0 */5 * * 2,3,5' # TWF
-    # - cron: '0 */5 * * 0,6' # SS
-    # - cron: '0 */4 * * 1' # M
-    # - cron: '0 */4 * * 0,3' #SW
-    # - cron: '0 */5 * * 5,6' #FS
-    # - cron: '0 */5 * * 0,2' #ST
-    # - cron: '0 */5 * * 4' #TH
-    - cron: '0 */5 * * 1,2,3' #MTW
+    - cron: '0 */5 * * *'   # Every 5 hours
   workflow_dispatch:
+
+env:
+  # define defaults here so `env.RUN_UPDATE` always exists
+  RUN_UPDATE: "false"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+
+      - name: Decide how many active days this week
+        id: decide_days
+        run: |
+          RAND=$(( RANDOM % 100 ))
+
+          if   [[ $RAND -lt 5 ]];   then  ACTIVE_DAYS=0
+          elif [[ $RAND -lt 15 ]];  then  ACTIVE_DAYS=1
+          elif [[ $RAND -lt 45 ]];  then  ACTIVE_DAYS=2
+          elif [[ $RAND -lt 75 ]];  then  ACTIVE_DAYS=3
+          elif [[ $RAND -lt 95 ]];  then  ACTIVE_DAYS=4
+          else                         ACTIVE_DAYS=5
+          fi
+
+          echo "ACTIVE_DAYS=${ACTIVE_DAYS}" >> $GITHUB_ENV
+
+      - name: Decide if this run should update (biased to weekends)
+        id: decide_update
+        run: |
+          DAY=$(date '+%w')
+          ACTIVE_DAYS=$ACTIVE_DAYS
+
+          RAND=$(( RANDOM % 100 ))
+          UPDATE=false
+
+          case $ACTIVE_DAYS in
+            0)  ;;
+            1)
+              if   [[ $DAY -eq 0 && $RAND -lt 60 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 && $RAND -lt 60 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 && $RAND -lt 30 ]]; then UPDATE=true
+              fi
+              ;;
+            2)
+              if   [[ $DAY -eq 0 && $RAND -lt 70 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 && $RAND -lt 70 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 && $RAND -lt 40 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 25 ]]; then UPDATE=true
+              fi
+              ;;
+            3)
+              if   [[ $DAY -eq 0 && $RAND -lt 80 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 && $RAND -lt 80 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 && $RAND -lt 50 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 30 ]]; then UPDATE=true
+              fi
+              ;;
+            4)
+              if   [[ $DAY -eq 0 && $RAND -lt 90 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 && $RAND -lt 90 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 && $RAND -lt 70 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 50 ]]; then UPDATE=true
+              fi
+              ;;
+            5)
+              if   [[ $DAY -eq 0 && $RAND -lt 95 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 && $RAND -lt 95 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 && $RAND -lt 80 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 70 ]]; then UPDATE=true
+              fi
+              ;;
+          esac
+
+          if [[ $UPDATE == "true" ]]; then
+            echo "RUN_UPDATE=true" >> $GITHUB_ENV
+          else
+            echo "RUN_UPDATE=false" >> $GITHUB_ENV
+          fi
+
+      - name: Generate 3D contrib
+        if: env.RUN_UPDATE == 'true'
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: khasmir04
+
       - name: Commit & Push
+        if: env.RUN_UPDATE == 'true'
         run: |
           git config user.name khasmir04
           git config user.email kcaluscusao@gmail.com
           git add -A .
           git commit -m "docs: update github-profile-3d-contrib"
           git push
+
+# name: GitHub Contribution 3D Stats
+
+# on:
+#   schedule:
+#     #- cron: '0 */5 * * 1-5' # Run every 5 hours on weekdays (Monday to Friday)
+#     # - cron: '0 */5 * * 1,4,6' # MTHS
+#     # - cron: '0 */5 * * 2,4,5' # TTHF
+#     # - cron: '0 */5 * * 1,2,5' # MTF
+#     # - cron: '0 */5 * * 0,2,3,6' #TWSS
+#     # - cron: '0 */5 * * 1,3,4,5' # MWTHF
+#     # - cron: '0 */5 * * 2,6' # TS
+#     # - cron: '0 */5 * * 1,3,4' # MWTH
+#     # - cron: '0 */5 * * 0,2,5' # FST
+#     # - cron: '0 */5 * * 1,4,5' # MTHF
+#     # - cron: '0 */5 * * 3,6' # WS
+#     # - cron: '0 */5 * * 0,1,3,6' # SMWS
+#     # - cron: '0 */5 * * 2,4' # TTH
+#     # - cron: '0 */5 * * 1,6' # MS
+#     # - cron: '0 */5 * * 0,5' # SF
+#     # - cron: '0 */5 * * 6' # S
+#     # - cron: '0 */5 * * 1,5' # MF
+#     # - cron: '0 */5 * * 0,4,5' # STF
+#     # - cron: '0 */5 * * 2,3,5' # TWF
+#     # - cron: '0 */5 * * 0,6' # SS
+#     # - cron: '0 */4 * * 1' # M
+#     # - cron: '0 */4 * * 0,3' #SW
+#     # - cron: '0 */5 * * 5,6' #FS
+#     # - cron: '0 */5 * * 0,2' #ST
+#     # - cron: '0 */5 * * 4' #TH
+#     - cron: '0 */5 * * 1,2,3' #MTW
+#   workflow_dispatch:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     name: generate-github-profile-3d-contrib
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           USERNAME: khasmir04
+#       - name: Commit & Push
+#         run: |
+#           git config user.name khasmir04
+#           git config user.email kcaluscusao@gmail.com
+#           git add -A .
+#           git commit -m "docs: update github-profile-3d-contrib"
+#           git push
