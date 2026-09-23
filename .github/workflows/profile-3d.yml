@@ -20,17 +20,17 @@ jobs:
         run: |
           RAND=$(( RANDOM % 100 ))
 
-          if   [[ $RAND -lt 5 ]];   then  ACTIVE_DAYS=0
-          elif [[ $RAND -lt 15 ]];  then  ACTIVE_DAYS=1
-          elif [[ $RAND -lt 45 ]];  then  ACTIVE_DAYS=2
-          elif [[ $RAND -lt 75 ]];  then  ACTIVE_DAYS=3
-          elif [[ $RAND -lt 95 ]];  then  ACTIVE_DAYS=4
-          else                         ACTIVE_DAYS=5
+          if   [[ $RAND -lt 15 ]];  then ACTIVE_DAYS=0
+          elif [[ $RAND -lt 35 ]];  then ACTIVE_DAYS=1
+          elif [[ $RAND -lt 65 ]];  then ACTIVE_DAYS=2
+          elif [[ $RAND -lt 85 ]];  then ACTIVE_DAYS=3
+          elif [[ $RAND -lt 95 ]];  then ACTIVE_DAYS=4
+          else                           ACTIVE_DAYS=5
           fi
 
           echo "ACTIVE_DAYS=${ACTIVE_DAYS}" >> $GITHUB_ENV
 
-      - name: Decide if this run should update (biased to weekends)
+      - name: Decide if this run should update (softened weekends)
         id: decide_update
         run: |
           DAY=$(date '+%w')
@@ -42,37 +42,42 @@ jobs:
           case $ACTIVE_DAYS in
             0)  ;;
             1)
-              if   [[ $DAY -eq 0 && $RAND -lt 60 ]]; then UPDATE=true
-              elif [[ $DAY -eq 6 && $RAND -lt 60 ]]; then UPDATE=true
-              elif [[ $DAY -eq 5 && $RAND -lt 30 ]]; then UPDATE=true
+              # Lowered weekend triggers (Sun = 0, Sat = 6) from 55% to 35%
+              if   [[ $DAY -eq 0 &&$RAND -lt 35 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 &&$RAND -lt 35 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 &&$RAND -lt 20 ]]; then UPDATE=true
               fi
               ;;
             2)
-              if   [[ $DAY -eq 0 && $RAND -lt 70 ]]; then UPDATE=true
-              elif [[ $DAY -eq 6 && $RAND -lt 70 ]]; then UPDATE=true
-              elif [[ $DAY -eq 5 && $RAND -lt 40 ]]; then UPDATE=true
-              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 25 ]]; then UPDATE=true
+              # Lowered weekends from 65% to 45%
+              if   [[ $DAY -eq 0 &&$RAND -lt 45 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 &&$RAND -lt 45 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 &&$RAND -lt 30 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 &&$RAND -lt 20 ]]; then UPDATE=true
               fi
               ;;
             3)
-              if   [[ $DAY -eq 0 && $RAND -lt 80 ]]; then UPDATE=true
-              elif [[ $DAY -eq 6 && $RAND -lt 80 ]]; then UPDATE=true
-              elif [[ $DAY -eq 5 && $RAND -lt 50 ]]; then UPDATE=true
-              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 30 ]]; then UPDATE=true
+              # Lowered weekends from 75% to 50%
+              if   [[ $DAY -eq 0 &&$RAND -lt 50 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 &&$RAND -lt 50 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 &&$RAND -lt 35 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 &&$RAND -lt 25 ]]; then UPDATE=true
               fi
               ;;
             4)
-              if   [[ $DAY -eq 0 && $RAND -lt 90 ]]; then UPDATE=true
-              elif [[ $DAY -eq 6 && $RAND -lt 90 ]]; then UPDATE=true
-              elif [[ $DAY -eq 5 && $RAND -lt 70 ]]; then UPDATE=true
-              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 50 ]]; then UPDATE=true
+              # Lowered weekends from 85% to 60%
+              if   [[ $DAY -eq 0 &&$RAND -lt 60 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 &&$RAND -lt 60 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 &&$RAND -lt 45 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 &&$RAND -lt 40 ]]; then UPDATE=true
               fi
               ;;
             5)
-              if   [[ $DAY -eq 0 && $RAND -lt 95 ]]; then UPDATE=true
-              elif [[ $DAY -eq 6 && $RAND -lt 95 ]]; then UPDATE=true
-              elif [[ $DAY -eq 5 && $RAND -lt 80 ]]; then UPDATE=true
-              elif [[ $DAY -ge 1 && $DAY -le 4 && $RAND -lt 70 ]]; then UPDATE=true
+              # Lowered weekends from 90% to 65%
+              if   [[ $DAY -eq 0 &&$RAND -lt 65 ]]; then UPDATE=true
+              elif [[ $DAY -eq 6 &&$RAND -lt 65 ]]; then UPDATE=true
+              elif [[ $DAY -eq 5 &&$RAND -lt 55 ]]; then UPDATE=true
+              elif [[ $DAY -ge 1 && $DAY -le 4 &&$RAND -lt 55 ]]; then UPDATE=true
               fi
               ;;
           esac
